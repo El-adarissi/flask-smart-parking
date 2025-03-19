@@ -79,6 +79,14 @@ class Bookings(db.Model):
 
 
 
+
+
+@app.route('/', methods=['GET'])
+def get_slots():
+    
+    return "Hello world"
+
+
 @app.route('/get-slots', methods=['GET'])
 def get_slots():
     try:
